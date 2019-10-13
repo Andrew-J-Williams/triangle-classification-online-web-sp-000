@@ -20,7 +20,6 @@ class Triangle
     else
       self.kind = :scalene
     end
-
   end
 
   class TriangleError < StandardError

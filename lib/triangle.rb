@@ -12,7 +12,7 @@ class Triangle
     if (side_one * side_two * side_three) == 0 || (side_one + side_two) <= side_three || (side_one + side_three) <= side_two || (side_two + side_three) <= side_one
       begin # If the conditions are met, we begin and raise our error, ending it when we are finished
         raise TriangleError
-      end
+      end # If the conditions for the error are not met, we move on to the next statement.
     elsif side_one == side_two && side_two == side_three # We check to see if all sides are equal.
       :equilateral
     elsif side_one == side_two || side_two == side_three || side_one == side_three # We check to see if at least 2 sides are equal

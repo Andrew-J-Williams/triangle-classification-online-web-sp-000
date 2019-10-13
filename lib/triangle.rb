@@ -8,9 +8,9 @@ class Triangle
     @side_three = side_three
   end
 
-  def kind # We first check for an error to see if 
+  def kind # We first check for an error to see if any of our triangle sides equals zero or if the sum of 2 sides is less than or equal to the 3rd side.
     if (side_one * side_two * side_three) == 0 || (side_one + side_two) <= side_three || (side_one + side_three) <= side_two || (side_two + side_three) <= side_one
-      begin
+      begin # If the conditions are met, we begin and raise our error, ending it when we are finished
         raise TriangleError
       end
     elsif side_one == side_two && side_two == side_three # We check to see if all sides are equal.

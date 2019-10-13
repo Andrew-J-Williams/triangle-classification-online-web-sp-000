@@ -2,7 +2,7 @@ class Triangle
 
   attr_accessor :side_one, :side_two, :side_three
 
-  def initialize(side_one, side_two, side_three)
+  def initialize(side_one, side_two, side_three) # First, when we create our triangle we do so with our 3 sides as arguments
     @side_one = side_one
     @side_two = side_two
     @side_three = side_three

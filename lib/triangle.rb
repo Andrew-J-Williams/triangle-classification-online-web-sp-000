@@ -14,11 +14,11 @@ class Triangle
         raise TriangleError
       end
     elsif side_one == side_two && side_two == side_three
-      self.kind = :equilateral
+      :equilateral
     elsif side_one == side_two || side_two == side_three || side_one == side_three
-      self.kind = :isosceles
+      :isosceles
     else
-      self.kind = :scalene
+      :scalene
     end
   end
 

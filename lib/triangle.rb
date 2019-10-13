@@ -9,7 +9,7 @@ class Triangle
   end
 
   def kind
-    if (side_one * side_two * side_three) == 0 
+    if (side_one * side_two * side_three) == 0 || 
   end
 
   class TriangleError < StandardError

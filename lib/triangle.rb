@@ -10,6 +10,9 @@ class Triangle
 
   def kind
     if (side_one * side_two * side_three) == 0 || (side_one + side_two) <= side_three || (side_one + side_three) <= side_two || (side_two <= side_three) <= side_one
+      begin
+        raise TriangleError
+      end
   end
 
   class TriangleError < StandardError

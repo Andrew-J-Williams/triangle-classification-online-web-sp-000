@@ -15,9 +15,9 @@ class Triangle
       end
     elsif side_one == side_two && side_two == side_three # We check to see if all sides are equal.
       :equilateral
-    elsif side_one == side_two || side_two == side_three || side_one == side_three # We check to see if at least 2 sides are equal 
+    elsif side_one == side_two || side_two == side_three || side_one == side_three # We check to see if at least 2 sides are equal
       :isosceles
-    else
+    else # If no sides are equal, we simply return our final type of triangle
       :scalene
     end
   end

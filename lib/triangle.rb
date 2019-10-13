@@ -13,9 +13,9 @@ class Triangle
       begin
         raise TriangleError
       end
-    elsif side_one == side_two && side_two == side_three
+    elsif side_one == side_two && side_two == side_three # We check to see if all sides are equal.
       :equilateral
-    elsif side_one == side_two || side_two == side_three || side_one == side_three
+    elsif side_one == side_two || side_two == side_three || side_one == side_three # We check to see if at least 2 sides are equal 
       :isosceles
     else
       :scalene

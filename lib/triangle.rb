@@ -23,7 +23,7 @@ class Triangle
   end
 
   class TriangleError < StandardError
-
+    # If we desire, we could put a 'message' method to read our the error to our user if we desired
   end
 
 end

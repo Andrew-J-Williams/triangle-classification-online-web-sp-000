@@ -13,6 +13,9 @@ class Triangle
       begin
         raise TriangleError
       end
+    elsif side_one == side_two && side_two == side_three
+      self.kind = :equilateral
+
   end
 
   class TriangleError < StandardError
